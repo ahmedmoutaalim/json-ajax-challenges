@@ -1,18 +1,17 @@
 var button = document.getElementById('button');
 var output = document.getElementById('output');
 
-button.addEventListener('click', function () {
+button.addEventListener('click',function(){
 
-    var xReq = new XMLHttpRequest();
-    xReq.open('GET', 'data.txt', true);
+var xReq = new XMLHttpRequest();
+xReq.open('GET','data.txt',true);
 
-    xReq.onload = function () {
+xReq.onload =function(){
 
-        var xData = xReq.response;
+var xData = xReq.response;
 
-        output.innerText=xData
-
-    };
-    xReq.send();
+    output.innerText= xData;
+};
+xReq.send();
 
 });
