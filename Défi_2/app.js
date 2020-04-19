@@ -44,6 +44,8 @@ Customers.addEventListener('click',function(){
                    + "name :" + xData[i].name + "<br>" 
                    +"company :"+ xData[i].company+"<br>" 
                    + "phone :"+ xData[i].phone +"<hr>";
+
+                   
         }
     Custs.innerHTML = output;
     }
